@@ -15,10 +15,10 @@ void	setName(std::string name)
 // Function to 
 void randomChump(std::string name)
 {
-	// Create a Zombie on scope memory (i.e. stack)
-	Zombie	tempZombie;
+	// Create a Zombie on stack memory (i.e. block scoped)
+	Zombie	tempZombie(name);
 
-	tempZombie.setName(name);
+	// Announce name of Zombie created
 	tempZombie.announce();
 
 	return ;
