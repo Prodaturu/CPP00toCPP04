@@ -1,1 +1,2 @@
-#include "zombie.hpp"
+#include "Zombie.hpp"
+#include <iostream>

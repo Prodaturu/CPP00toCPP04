@@ -33,10 +33,10 @@ class Zombie
 /* --- Stand alone functions --- */
 
 // 1. Create new Zombie on heap & return it's pointer
-Zombie* 	newZombie( std::string name );
+Zombie* 	newZombie(std::string name);
 
 // 2. Creates new Zombie on stack & announce itself
-void		randomChump( std::string name );
+void		randomChump(std::string name);
 
 
 #endif
