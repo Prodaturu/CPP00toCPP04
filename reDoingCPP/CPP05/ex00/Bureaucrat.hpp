@@ -1,5 +1,5 @@
-#ifndef Bereaucrat_HPP
-#define Bereaucrat_HPP
+#ifndef BUREAUCRAT_HPP
+#define BUREAUCRAT_HPP
 
 #include <iostream>
 #include <string>
@@ -38,7 +38,7 @@ class Bureaucrat
 		};
 	};
 
-#endif //Bureaucrat_HPP
+#endif // BUREAUCRAT_HPP
 
 /**
  * Concept of : Object Assignment and Copying
