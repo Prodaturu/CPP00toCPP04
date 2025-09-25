@@ -46,15 +46,15 @@ void Harl::complain(const std::string& level)
     
     switch (levelIndex)
     {
-        case 0: // DEBUG - fall through to show all levels
-            debug();
+		case 0: // DEBUG - fall through to show all levels
+		debug();
         case 1: // INFO - fall through to show INFO, WARNING, ERROR
-            info();
+		info();
         case 2: // WARNING - fall through to show WARNING, ERROR
-            warning();
+		warning();
         case 3: // ERROR - show only ERROR
-            error();
-            break;
+		error();
+		break; 	// break at ERROR; it's the highest level of complaint
         default: // Invalid level
             std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
             break;
