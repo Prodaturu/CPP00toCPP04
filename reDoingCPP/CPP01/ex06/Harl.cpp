@@ -48,10 +48,13 @@ void Harl::complain(const std::string& level)
     {
 		case 0: // DEBUG - fall through to show all levels
 		debug();
+		// fall through
         case 1: // INFO - fall through to show INFO, WARNING, ERROR
 		info();
+		// fall through
         case 2: // WARNING - fall through to show WARNING, ERROR
 		warning();
+		// fall through
         case 3: // ERROR - show only ERROR
 		error();
 		break; 	// break at ERROR; it's the highest level of complaint
