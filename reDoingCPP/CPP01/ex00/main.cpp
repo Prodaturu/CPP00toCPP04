@@ -24,9 +24,9 @@ int	main()
 
 /** Logic:
 
-1. Create a temporary zombie on the stack using the randomChump function.
-2. Create a zombie on the heap using the newZombie function.
-3. If the heap zombie is successfully created, announce it and free the allocated memory.
-4. Return 0 to indicate successful execution.
+ * 1. Create a temporary zombie on the stack using the randomChump function.
+ * 2. Create a zombie on the heap using the newZombie function.
+ * 3. If the heap zombie is successfully created, announce it and free the allocated memory.
+ * 4. Return 0 to indicate successful execution.
 
 */

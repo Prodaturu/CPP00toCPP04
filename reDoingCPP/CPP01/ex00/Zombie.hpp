@@ -7,38 +7,28 @@
 // Zombie class implementation //
 class Zombie
 {
-	private:
-		std::string _name;
+    private:
+        std::string _name;
 
-	public:
+    public:
 
 /* --- Constructors and Destructor --- */
 
-	// Default constructor
-	Zombie();
+    Zombie(const std::string& name);	// Constructor with name
 
-	// Constructor with name
-	Zombie(std::string name);
-
-	// Destructor
-	~Zombie();
+    ~Zombie(); 					// Destructor
 
 /* --- Helper Functions --- */
 
-	// Function to announce zombie's name
-	void	announce(void);
+    void	announce(void);					// Fn announcing zombie's name
 
-	// Function to set name of a zombie.
-	void	setName(std::string name);
 };
 
 /* --- Stand alone functions --- */
 
-// 1. Create new Zombie on heap & return it's pointer
-Zombie* 	newZombie(std::string name);
+Zombie* 	newZombie(const std::string& name);	// 1. Create new Zombie on heap & return it's pointer
 
-// 2. Creates new Zombie on stack & announce itself
-void		randomChump(std::string name);
+void		randomChump(const std::string& name);	// 2. Creates new Zombie on stack & announce itself
 
 
 #endif

@@ -1,12 +1,12 @@
 #include "Zombie.hpp"
-#include <iostream>
 
-// This function creates a zombie, names it, and returns it 
-// so you can use it outside of the function scope.
-Zombie* newZombie(std::string name)
+// This function creates a zombie, names it, and returns it
+// can be used outside of the function scope
+
+Zombie* newZombie(const std::string& name)
 {
-	// Create a Zombie on heap memory
-	Zombie* heapZombie = new Zombie(name);
+    // Create a Zombie on heap memory
+    Zombie* heapZombie = new Zombie(name);
 
-	return heapZombie;
+    return heapZombie;
 }
