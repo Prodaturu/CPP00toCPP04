@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 
+// Zombie class implementation //
 class Zombie
 {
 	private:
@@ -15,11 +16,12 @@ class Zombie
 
 	// Default constructor
 	Zombie();
+
 	// Constructor with name
 	Zombie(std::string name);
+
 	// Destructor
 	~Zombie();
-
 
 /* --- Helper Functions --- */
 

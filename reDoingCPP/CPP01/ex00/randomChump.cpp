@@ -1,25 +1,17 @@
 #include "Zombie.hpp"
 #include <iostream>
 
-void	setName(std::string name)
+// This function creates a zombie, names it,
+// and makes it announce itself.
+
+void	randomChump(std::string name)
 {
-	(void) name;
-	return ;
+	Zombie tempZombie(name); // Create a Zombie object on the stack
+	tempZombie.announce();   // Call the announce method
+	
+	return;                  
+	// Function ends, tempZombie goes out of scope and is destroyed
 }
 
-/* --- Constructors and Destructor --- */
 
-
-/* --- Stand alone Functions --- */
-
-// Function to 
-void randomChump(std::string name)
-{
-	// Create a Zombie on stack memory (i.e. block scoped)
-	Zombie	tempZombie(name);
-
-	// Announce name of Zombie created
-	tempZombie.announce();
-
-	return ;
-}
+// done //
