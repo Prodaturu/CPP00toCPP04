@@ -30,8 +30,9 @@ Zombie* zombieHorde(int N, std::string name);
 
 ---
 
-## Testing
-
-- Implement your own tests to ensure that your `zombieHorde()` function works as expected.
-- Try calling `announce()` for each zombie.
-- Use `delete` to deallocate all zombies and check for memory leaks.
+## Requirements
+- Each Zombie should announce itself upon creation.
+- Use `new[]` to allocate the array of Zombies.
+- Use `delete[]` to free the allocated memory.
+- Ensure proper memory management to avoid leaks.
+- Follow C++11 standards.
