@@ -1,6 +1,6 @@
 NAME = moar_brainz
 
-SRCS = main.cpp Zombie.cpp ZombieHorde.cpp
+SRCS = main.cpp Zombie.cpp zombieHorde.cpp
 
 # Replace .cpp with .o for each source file (no space between ':' and pattern)
 OBJS = $(SRCS:.cpp=.o)
